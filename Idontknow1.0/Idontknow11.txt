@@ -1,0 +1,847 @@
+[1] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["PlayCount"] = 0,
+						["ClassName"] = "ogg",
+						["UniqueID"] = "879194254",
+						["URL"] = "https://raw.githubusercontent.com/MRePotatoes/PAC3-outfits-With-download-/master/Idontknow1.0/Sounds/TestNyanBeg.ogg",
+						["Name"] = "testnyanstart",
+						["Volume"] = 0.3,
+					},
+				},
+			},
+			["self"] = {
+				["AffectChildrenOnly"] = true,
+				["ClassName"] = "event",
+				["UniqueID"] = "185265304",
+				["RootOwner"] = false,
+				["Event"] = "animation_event",
+				["EditorExpand"] = true,
+				["Arguments"] = "attack primary@@0.1",
+			},
+		},
+		[2] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ClassName"] = "sound",
+								["UniqueID"] = "598369995",
+								["Volume"] = 0,
+								["Name"] = "Sound being replaced (Usually Weapon_Name.Single), Volume at 0.05",
+								["Sound"] = "Weapon_SMG1.Single",
+							},
+						},
+					},
+					["self"] = {
+						["AffectChildrenOnly"] = true,
+						["ClassName"] = "event",
+						["UniqueID"] = "1328612190",
+						["Event"] = "animation_event",
+						["Name"] = "Animation Event to get if we're attacking (use reload instead of attack primary for crossbow)",
+						["Arguments"] = "attack primary@@0.01",
+					},
+				},
+			},
+			["self"] = {
+				["ClassName"] = "event",
+				["UniqueID"] = "1127903418",
+				["Event"] = "weapon_class",
+				["Operator"] = "equal",
+				["Arguments"] = "weapon_smg1@@1",
+				["Invert"] = true,
+			},
+		},
+		[3] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Alpha"] = 0,
+				["ClassName"] = "model",
+				["UniqueID"] = "2415180994",
+				["Model"] = "models/pac/default.mdl",
+				["EditorExpand"] = true,
+				["Bone"] = "hitpos",
+				["Name"] = "hitpos",
+				["Brightness"] = 0.9,
+			},
+		},
+		[4] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["PlayCount"] = 0,
+						["ClassName"] = "ogg",
+						["UniqueID"] = "3735653552",
+						["URL"] = "https://raw.githubusercontent.com/MRePotatoes/PAC3-outfits-With-download-/master/Idontknow1.0/Sounds/TestNyanStart.ogg",
+						["Name"] = "testnyanstart",
+						["EditorExpand"] = true,
+					},
+				},
+				[2] = {
+					["children"] = {
+					},
+					["self"] = {
+						["StartColor"] = Vector(255, 0, 191),
+						["Position"] = Vector(11.743713378906, -0.861572265625, -4.330078125),
+						["Bend"] = 0,
+						["Material"] = "trails/smoke",
+						["EndPointUID"] = "2415180994",
+						["UniqueID"] = "3374942857",
+						["Bone"] = "right hand",
+						["ClassName"] = "beam",
+						["EndColor"] = Vector(0, 255, 255),
+					},
+				},
+				[3] = {
+					["children"] = {
+					},
+					["self"] = {
+						["Velocity"] = 1250,
+						["Material"] = "https://raw.githubusercontent.com/MRePotatoes/PAC3-outfits-With-download-/master/Idontknow1.0/Textures/Nyancat.png",
+						["UniqueID"] = "2554567448",
+						["AimPartUID"] = "2415180994",
+						["Position"] = Vector(10.36962890625, -1.3123931884766, -4.2216796875),
+						["Bounce"] = 0,
+						["FireDelay"] = 0,
+						["AirResistance"] = 0,
+						["EndSize"] = 2,
+						["ClassName"] = "particles",
+						["Sliding"] = false,
+						["Spread"] = 0.05,
+						["Angles"] = Angle(0, -1.7147590369859e-006, -7.7164158938103e-006),
+						["Bone"] = "right hand",
+						["EditorExpand"] = true,
+						["Gravity"] = Vector(0, 0, 0),
+					},
+				},
+			},
+			["self"] = {
+				["AffectChildrenOnly"] = true,
+				["ClassName"] = "event",
+				["Invert"] = true,
+				["RootOwner"] = false,
+				["Event"] = "animation_event",
+				["UniqueID"] = "1164525964",
+				["Arguments"] = "attack primary@@0.1",
+				["EditorExpand"] = true,
+			},
+		},
+		[5] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Angles"] = Angle(9.0979995727539, 6.2984850956127e-005, -180),
+				["UniqueID"] = "1850093371",
+				["Position"] = Vector(4.08349609375, -1.1423950195313, 2.720703125),
+				["Size"] = 0.9,
+				["Bone"] = "right hand",
+				["Model"] = "models/weapons/w_smg_mac10.mdl",
+				["ClassName"] = "model",
+			},
+		},
+		[6] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Walk"] = "walk_pistol",
+				["UniqueID"] = "2400762917",
+				["ReloadStand"] = "reload_pistol",
+				["Jump"] = "jump_pistol",
+				["AttackStandPrimaryfire"] = "aimlayer_pistol",
+				["SwimIdle"] = "swim_idle_pistol",
+				["Run"] = "run_pistol",
+				["ClassName"] = "holdtype",
+				["Swim"] = "swimming_pistol",
+				["CrouchWalk"] = "cwalk_pistol",
+				["CrouchIdle"] = "cidle_pistol",
+				["ReloadCrouch"] = "reload_pistol",
+				["StandIdle"] = "idle_pistol",
+				["AttackCrouchPrimaryfire"] = "aimlayer_pistol_crouch",
+			},
+		},
+	},
+	["self"] = {
+		["ClassName"] = "group",
+		["UniqueID"] = "3035408475",
+		["Name"] = "SMG",
+	},
+},
+[2] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ClassName"] = "proxy",
+						["UniqueID"] = "1699907531",
+						["Expression"] = "nil,nil,abs(owner_velocity_right())*-0.25",
+						["EditorExpand"] = true,
+						["VariableName"] = "Position",
+					},
+				},
+				[2] = {
+					["children"] = {
+					},
+					["self"] = {
+						["VelocityRoughness"] = 20,
+						["UniqueID"] = "209517437",
+						["Expression"] = "nil, owner_velocity_right()*3, owner_velocity_forward()*-1",
+						["ClassName"] = "proxy",
+						["VariableName"] = "Angles",
+					},
+				},
+			},
+			["self"] = {
+				["Angles"] = Angle(0.65625, 5.6051938572993e-045, -0),
+				["UniqueID"] = "3891402856",
+				["Bone"] = "pelvis",
+				["ClassName"] = "bone",
+				["EditorExpand"] = true,
+			},
+		},
+	},
+	["self"] = {
+		["ClassName"] = "group",
+		["UniqueID"] = "2288060575",
+		["Name"] = "run lean",
+	},
+},
+[3] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ClassName"] = "event",
+				["UniqueID"] = "934085827",
+				["Event"] = "weapon_class",
+				["Arguments"] = "Crowbar@@1",
+				["Invert"] = true,
+			},
+		},
+		[2] = {
+			["children"] = {
+			},
+			["self"] = {
+				["UsePlayerColor"] = true,
+				["Angles"] = Angle(7.8331813812256, -100.91264343262, -155.86985778809),
+				["UniqueID"] = "3399603005",
+				["Position"] = Vector(2.1136474609375, -1.126708984375, 3.1097412109375),
+				["Size"] = 1.15,
+				["Bone"] = "right hand",
+				["Model"] = "models/weapons/w_knife_t.mdl",
+				["ClassName"] = "model",
+			},
+		},
+	},
+	["self"] = {
+		["ClassName"] = "group",
+		["UniqueID"] = "1207255157",
+		["Name"] = "Crowbar",
+	},
+},
+[4] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ClassName"] = "event",
+				["UniqueID"] = "4291839192",
+				["Event"] = "weapon_class",
+				["Operator"] = "equal",
+				["Arguments"] = "gmod_tool@@1",
+				["Invert"] = true,
+			},
+		},
+		[2] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Walk"] = "walk_all",
+				["UniqueID"] = "3194621853",
+				["Jump"] = "jump_fist",
+				["SwimIdle"] = "swim_idle_all",
+				["Run"] = "run_all_01",
+				["ClassName"] = "holdtype",
+				["Swim"] = "swimming_all",
+				["CrouchIdle"] = "cidle_all",
+				["StandIdle"] = "idle_all_01",
+				["CrouchWalk"] = "cwalk_all",
+			},
+		},
+	},
+	["self"] = {
+		["ClassName"] = "group",
+		["UniqueID"] = "2917629180",
+		["Name"] = "Toolgun",
+	},
+},
+[5] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["Velocity"] = 7.5,
+						["UniqueID"] = "2246996272",
+						["ParticleAngleVelocity"] = Vector(50, 50.099998474121, 50),
+						["EndSize"] = 2.5,
+						["Material"] = "sprites/light_ignorez",
+						["Bone"] = "right hand",
+						["NumberParticles"] = 1.2,
+						["Gravity"] = Vector(0, 0, 0),
+						["StickLifetime"] = 0.1,
+						["PositionSpread"] = 4.8,
+						["FireDelay"] = 0,
+						["DieTime"] = 0.5,
+						["StartAlpha"] = 181.9,
+						["Angles"] = Angle(143.69999694824, 110.5, -33.599998474121),
+						["Spread"] = 0.4,
+						["PositionOffset"] = Vector(0, 0, -0.20000000298023),
+						["EditorExpand"] = true,
+						["StickStartAlpha"] = 60,
+						["StartSize"] = 1,
+						["ClassName"] = "particles",
+					},
+				},
+				[2] = {
+					["children"] = {
+					},
+					["self"] = {
+						["Position"] = Vector(0, 0, -2),
+						["UniqueID"] = "1863458817",
+						["Size"] = 0.2,
+						["EditorExpand"] = true,
+						["UseWeaponColor"] = true,
+						["PositionOffset"] = Vector(0, 0.30000001192093, 0),
+						["ClassName"] = "model",
+						["Bone"] = "right hand",
+						["Model"] = "models/Mechanics/gears/gear12x24.mdl",
+						["Angles"] = Angle(0, 0, -0.10000000149012),
+					},
+				},
+			},
+			["self"] = {
+				["ConstrainPitch"] = true,
+				["ClassName"] = "jiggle",
+				["UniqueID"] = "1675325946",
+				["Speed"] = 2,
+				["ConstrainYaw"] = true,
+				["Bone"] = "right hand",
+				["EditorExpand"] = true,
+				["Position"] = Vector(5.042724609375, -5.361083984375, -3.65576171875),
+			},
+		},
+		[2] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Walk"] = "walk_magic",
+				["UniqueID"] = "849483754",
+				["Jump"] = "jump_magic",
+				["SwimIdle"] = "swim_idle_magic",
+				["Run"] = "run_magic",
+				["ClassName"] = "holdtype",
+				["Swim"] = "swimming_magic",
+				["CrouchIdle"] = "cidle_magic",
+				["StandIdle"] = "idle_magic",
+				["CrouchWalk"] = "cwalk_magic",
+			},
+		},
+		[3] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ClassName"] = "event",
+				["UniqueID"] = "1168175675",
+				["Event"] = "weapon_class",
+				["Arguments"] = "Phys@@1",
+				["Invert"] = true,
+			},
+		},
+	},
+	["self"] = {
+		["ClassName"] = "group",
+		["UniqueID"] = "492423059",
+		["Name"] = "Phys",
+	},
+},
+[6] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["Angles"] = Angle(16.961000442505, -19.478000640869, 7.3979997634888),
+						["Position"] = Vector(0.28600001335144, -0.1336669921875, -0.58200001716614),
+						["UniqueID"] = "2098437684",
+						["Bone"] = "left thigh",
+						["Name"] = "right thigh",
+						["ClassName"] = "bone",
+					},
+				},
+				[2] = {
+					["children"] = {
+					},
+					["self"] = {
+						["Angles"] = Angle(-12.5, -0.20000000298023, -0.20000000298023),
+						["Bone"] = "right thigh",
+						["UniqueID"] = "1424301209",
+						["ClassName"] = "bone",
+					},
+				},
+				[3] = {
+					["children"] = {
+					},
+					["self"] = {
+						["Angles"] = Angle(33.552574157715, -7.5467348098755, 9.8278274536133),
+						["Bone"] = "left calf",
+						["UniqueID"] = "4014464156",
+						["ClassName"] = "bone",
+					},
+				},
+				[4] = {
+					["children"] = {
+					},
+					["self"] = {
+						["EditorExpand"] = true,
+						["Position"] = Vector(2.484375, -1.200927734375, 21.89999961853),
+						["Bone"] = "pelvis",
+						["UniqueID"] = "3119407898",
+						["ClassName"] = "bone",
+					},
+				},
+			},
+			["self"] = {
+				["Name"] = "Anim",
+				["ClassName"] = "group",
+				["UniqueID"] = "1982220308",
+				["EditorExpand"] = true,
+			},
+		},
+		[2] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ClassName"] = "animation",
+				["UniqueID"] = "646548146",
+				["SequenceName"] = "sit",
+			},
+		},
+		[3] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["UniqueID"] = "226714590",
+						["Model"] = "models/hunter/plates/plate1x1.mdl",
+						["Bone"] = "none",
+						["Position"] = Vector(-15.951171875, -1.19287109375, 79.756500244141),
+						["Name"] = "plate",
+						["Scale"] = Vector(1, 1, 9.999999960042e-012),
+						["Alpha"] = 0.999,
+						["ClassName"] = "model",
+						["Size"] = 0.75,
+						["AngleOffset"] = Angle(90, 0, 0),
+						["Angles"] = Angle(0, -0.40000000596046, 0),
+						["Fullbright"] = true,
+						["Translucent"] = true,
+						["Material"] = "https://lh4.googleusercontent.com/-8nyO01aXNYY/VQqmS-lSVFI/AAAAAAAAAW8/ZM_3TTwomhc/smoke+weed+everyday.gif",
+					},
+				},
+			},
+			["self"] = {
+				["Angles"] = Angle(-77.861846923828, -73.527061462402, -15.765000343323),
+				["UniqueID"] = "2391882876",
+				["Position"] = Vector(2.179931640625, -37.077758789063, -12.582641601563),
+				["EditorExpand"] = true,
+				["Bone"] = "pelvis",
+				["Model"] = "models/chairs/armchair.mdl",
+				["ClassName"] = "model",
+			},
+		},
+		[4] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["Event"] = "is_crouching",
+						["ClassName"] = "event",
+						["Invert"] = true,
+						["UniqueID"] = "3344335489",
+					},
+				},
+			},
+			["self"] = {
+				["UniqueID"] = "3544795519",
+				["Name"] = "animation event equal \"attack primary\"",
+				["Arguments"] = "speak@@3",
+				["TargetPartUID"] = "1084387190",
+				["ClassName"] = "event",
+				["EditorExpand"] = true,
+				["Operator"] = "equal",
+				["Event"] = "is_flashlight_on",
+				["Invert"] = true,
+			},
+		},
+		[5] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ClassName"] = "webaudio",
+				["UniqueID"] = "1084387190",
+				["PositionOffset"] = Vector(-0.30000001192093, 0, 0),
+				["URL"] = "https://www.myinstants.com/media/sounds/snoop-dogg-smoke-weed-everyday.mp3",
+				["EditorExpand"] = true,
+				["Volume"] = 4,
+				["OuterVolume"] = -0.4,
+			},
+		},
+	},
+	["self"] = {
+		["Name"] = "SmokeWEVRYDAY",
+		["ClassName"] = "group",
+		["UniqueID"] = "195077844",
+		["Description"] = "add parts to me!",
+	},
+},
+[7] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Angles"] = Angle(-1.1972838640213, 8.6604776382446, 179.99995422363),
+				["UniqueID"] = "2540242715",
+				["Position"] = Vector(12.67138671875, 0.76971435546875, 4.7158203125),
+				["Bone"] = "right hand",
+				["Model"] = "models/weapons/w_snip_awp.mdl",
+				["ClassName"] = "model",
+			},
+		},
+		[2] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ClassName"] = "event",
+				["UniqueID"] = "3259808736",
+				["Event"] = "weapon_class",
+				["Operator"] = "equal",
+				["Arguments"] = "weapon_crossbow@@1",
+				["Invert"] = true,
+			},
+		},
+	},
+	["self"] = {
+		["ClassName"] = "group",
+		["UniqueID"] = "1643274573",
+		["Name"] = "Crossbow",
+	},
+},
+[8] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+			},
+			["self"] = {
+				["EditorExpand"] = true,
+				["ClassName"] = "animation",
+				["UniqueID"] = "2492476836",
+				["SequenceName"] = "ragdoll",
+			},
+		},
+		[2] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Angles"] = Angle(-61, 0, 0),
+				["Bone"] = "left upperarm",
+				["UniqueID"] = "3068352848",
+				["ClassName"] = "bone",
+			},
+		},
+		[3] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Angles"] = Angle(68.400001525879, 0, 6),
+				["Position"] = Vector(-0.69999998807907, 0, 0),
+				["Bone"] = "right upperarm",
+				["UniqueID"] = "3228120522",
+				["ClassName"] = "bone",
+			},
+		},
+		[4] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Angles"] = Angle(-0.30000001192093, -127.69999694824, 0.30000001192093),
+				["Bone"] = "left forearm",
+				["UniqueID"] = "3044553945",
+				["ClassName"] = "bone",
+			},
+		},
+		[5] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Angles"] = Angle(11.017926216125, -25.617481231689, 28.644237518311),
+				["Position"] = Vector(-0.079345703125, -3.0888061523438, -1.8161392211914),
+				["UniqueID"] = "2833560827",
+				["ClassName"] = "bone",
+				["EditorExpand"] = true,
+			},
+		},
+		[6] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Arguments"] = "k",
+				["Invert"] = true,
+				["Event"] = "button",
+				["UniqueID"] = "2986855114",
+				["EditorExpand"] = true,
+				["ClassName"] = "event",
+			},
+		},
+	},
+	["self"] = {
+		["ClassName"] = "group",
+		["UniqueID"] = "1592088043",
+		["Name"] = "Dab",
+	},
+},
+[9] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ClassName"] = "bone",
+				["UniqueID"] = "2195959425",
+				["Size"] = 0.1,
+			},
+		},
+		[2] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ClassName"] = "animation",
+						["UniqueID"] = "67181479",
+						["SequenceName"] = "swimming_all",
+					},
+				},
+			},
+			["self"] = {
+				["AffectChildrenOnly"] = true,
+				["ClassName"] = "event",
+				["Invert"] = true,
+				["RootOwner"] = false,
+				["Event"] = "is_in_noclip",
+				["UniqueID"] = "886486516",
+				["EditorExpand"] = true,
+			},
+		},
+		[3] = {
+			["children"] = {
+			},
+			["self"] = {
+				["UniqueID"] = "3448433031",
+				["ClassName"] = "entity",
+			},
+		},
+		[4] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Outline"] = 26.6,
+				["UniqueID"] = "1608540574",
+				["Position"] = Vector(-0.21839904785156, -4.3779997825623, 0),
+				["Alpha"] = 0.1,
+				["Angles"] = Angle(90, 0, 90),
+				["Size"] = 0.075,
+				["OutlineAlpha"] = 0.15,
+				["ClassName"] = "text",
+				["OutlineColor"] = Vector(0, 0, 0),
+				["Bone"] = "spine 2",
+				["Text"] = "MRePotatoes",
+			},
+		},
+		[5] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Outline"] = 21.1,
+				["UniqueID"] = "851643230",
+				["Position"] = Vector(1.017822265625, -4.4159998893738, 0),
+				["ClassName"] = "text",
+				["Alpha"] = 0.9,
+				["Angles"] = Angle(90, -90, 0),
+				["Size"] = 0.1,
+				["OutlineAlpha"] = 0.275,
+				["Color"] = Vector(0, 0, 0),
+				["OutlineColor"] = Vector(0, 0, 0),
+				["Bone"] = "spine 2",
+				["Text"] = "by",
+			},
+		},
+		[6] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["Max"] = 255,
+								["Offset"] = 90,
+								["UniqueID"] = "1935704168",
+								["Pow"] = 1.5,
+								["Axis"] = "z",
+								["ClassName"] = "proxy",
+								["Name"] = "color z",
+								["VariableName"] = "Color",
+							},
+						},
+						[2] = {
+							["children"] = {
+							},
+							["self"] = {
+								["Max"] = 255,
+								["ClassName"] = "proxy",
+								["UniqueID"] = "3971579613",
+								["Axis"] = "x",
+								["Pow"] = 1.5,
+								["Name"] = "color x",
+								["VariableName"] = "Color",
+							},
+						},
+						[3] = {
+							["children"] = {
+							},
+							["self"] = {
+								["Max"] = 255,
+								["Offset"] = 45,
+								["UniqueID"] = "3182887299",
+								["Pow"] = 1.5,
+								["Axis"] = "y",
+								["ClassName"] = "proxy",
+								["Name"] = "color y",
+								["VariableName"] = "Color",
+							},
+						},
+					},
+					["self"] = {
+						["ClassName"] = "model",
+						["UniqueID"] = "3027178454",
+						["Position"] = Vector(0.000274658203125, 0.328125, -0.03668212890625),
+						["Color"] = Vector(62.291397094727, 202.58953857422, 249.33860778809),
+						["EditorExpand"] = true,
+						["Model"] = "models/player/items/humans/top_hat.mdl",
+						["Angles"] = Angle(84.096473693848, -90.000068664551, 179.99980163574),
+					},
+				},
+			},
+			["self"] = {
+				["Invert"] = true,
+				["Position"] = Vector(2.5322265625, 0.0001220703125, -0.0003509521484375),
+				["UsePlayerColor"] = true,
+				["Material"] = "https://github.com/MRePotatoes/PAC3-outfits-With-download-/raw/master/Idontknow1.0/Textures/Default.png",
+				["Size"] = 0.825,
+				["ClassName"] = "model",
+				["Angles"] = Angle(-90, -90, 0),
+				["UniqueID"] = "839596628",
+				["Model"] = "https://raw.githubusercontent.com/MRePotatoes/PAC3-outfits-With-download-/master/Idontknow1.0/Idontknow_Blockhead.obj",
+				["EditorExpand"] = true,
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["UniqueID"] = "2686881008",
+		["ClassName"] = "group",
+		["Name"] = "my outfit",
+		["Description"] = "add parts to me!",
+	},
+},
+[10] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+								[1] = {
+									["children"] = {
+									},
+									["self"] = {
+										["UniqueID"] = "463513559",
+										["Name"] = "webcam image",
+										["Scale"] = Vector(0.69999998807907, 1.2999999523163, 0.76999998092651),
+										["ClassName"] = "model",
+										["Size"] = 0.208,
+										["Position"] = Vector(-0.020416259765625, -0.024200439453125, 5.2340927124023),
+										["Material"] = "http://wallpaper21.com/wp-content/uploads/2016/06/smiley-face-wallpaper1-1024x640.jpg",
+										["Fullbright"] = true,
+										["Model"] = "models/hunter/plates/plate1x1.mdl",
+										["Angles"] = Angle(89.833763122559, 179.97763061523, 179.97631835938),
+									},
+								},
+							},
+							["self"] = {
+								["ClassName"] = "model",
+								["Size"] = 0.25,
+								["EditorExpand"] = true,
+								["Model"] = "models/gmod_tower/suitetv.mdl",
+								["UniqueID"] = "846923788",
+							},
+						},
+					},
+					["self"] = {
+						["ClassName"] = "jiggle",
+						["UniqueID"] = "2245707605",
+						["EditorExpand"] = true,
+						["Bone"] = "invalidbone",
+						["Name"] = "Makes the head float behind.",
+						["Position"] = Vector(-0.001953125, -25.370361328125, 56.828125),
+					},
+				},
+			},
+			["self"] = {
+				["Name"] = "The Head",
+				["ClassName"] = "group",
+				["UniqueID"] = "2053457589",
+				["EditorExpand"] = true,
+			},
+		},
+	},
+	["self"] = {
+		["Name"] = "Second Head & Hitpos effects",
+		["ClassName"] = "group",
+		["UniqueID"] = "860513635",
+		["Description"] = "add parts to me!",
+	},
+},
