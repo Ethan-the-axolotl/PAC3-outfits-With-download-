@@ -2,40 +2,6 @@
 	["children"] = {
 		[1] = {
 			["children"] = {
-			},
-			["self"] = {
-				["Walk"] = "walk_pistol",
-				["UniqueID"] = "2400762917",
-				["ReloadStand"] = "reload_pistol",
-				["Jump"] = "jump_pistol",
-				["AttackStandPrimaryfire"] = "aimlayer_pistol",
-				["SwimIdle"] = "swim_idle_pistol",
-				["Run"] = "run_pistol",
-				["ClassName"] = "holdtype",
-				["Swim"] = "swimming_pistol",
-				["CrouchWalk"] = "cwalk_pistol",
-				["CrouchIdle"] = "cidle_pistol",
-				["ReloadCrouch"] = "reload_pistol",
-				["StandIdle"] = "idle_pistol",
-				["AttackCrouchPrimaryfire"] = "aimlayer_pistol_crouch",
-			},
-		},
-		[2] = {
-			["children"] = {
-			},
-			["self"] = {
-				["Alpha"] = 0,
-				["ClassName"] = "model",
-				["UniqueID"] = "2415180994",
-				["Model"] = "models/pac/default.mdl",
-				["EditorExpand"] = true,
-				["Bone"] = "hitpos",
-				["Name"] = "hitpos",
-				["Brightness"] = 0.9,
-			},
-		},
-		[3] = {
-			["children"] = {
 				[1] = {
 					["children"] = {
 						[1] = {
@@ -69,21 +35,22 @@
 				["Invert"] = true,
 			},
 		},
-		[4] = {
+		[2] = {
 			["children"] = {
 				[1] = {
 					["children"] = {
 					},
 					["self"] = {
-						["StartColor"] = Vector(255, 0, 191),
+						["EndPointName"] = "hitpos",
 						["Position"] = Vector(11.743713378906, -0.861572265625, -4.330078125),
 						["Bend"] = 0,
-						["Material"] = "trails/smoke",
+						["ClassName"] = "beam",
 						["EndPointUID"] = "2415180994",
 						["UniqueID"] = "3374942857",
-						["Bone"] = "right hand",
-						["ClassName"] = "beam",
 						["EndColor"] = Vector(0, 255, 255),
+						["Bone"] = "right hand",
+						["Material"] = "trails/smoke",
+						["StartColor"] = Vector(255, 0, 191),
 					},
 				},
 				[2] = {
@@ -103,21 +70,22 @@
 					},
 					["self"] = {
 						["Velocity"] = 1250,
-						["Material"] = "https://raw.githubusercontent.com/MRePotatoes/PAC3-outfits-With-download-/master/Idontknow1.1/Textures/Nyancat.png",
 						["UniqueID"] = "2554567448",
-						["AimPartUID"] = "2415180994",
+						["EndSize"] = 2,
+						["Material"] = "https://raw.githubusercontent.com/MRePotatoes/PAC3-outfits-With-download-/master/Idontknow1.1/Textures/Nyancat.png",
+						["AimPartName"] = "hitpos",
+						["Bone"] = "right hand",
+						["AirResistance"] = 0,
 						["Position"] = Vector(10.36962890625, -1.3123931884766, -4.2216796875),
+						["AimPartUID"] = "2415180994",
 						["Bounce"] = 0,
 						["FireDelay"] = 0,
-						["AirResistance"] = 0,
-						["EndSize"] = 2,
 						["ClassName"] = "particles",
-						["Sliding"] = false,
 						["Spread"] = 0.05,
-						["Angles"] = Angle(0, -1.7147590369859e-006, -7.7164158938103e-006),
-						["Bone"] = "right hand",
-						["EditorExpand"] = true,
 						["Gravity"] = Vector(0, 0, 0),
+						["EditorExpand"] = true,
+						["Angles"] = Angle(0, -1.7147590369859e-006, -7.7164158938103e-006),
+						["Sliding"] = false,
 					},
 				},
 			},
@@ -126,13 +94,13 @@
 				["ClassName"] = "event",
 				["Invert"] = true,
 				["RootOwner"] = false,
-				["Event"] = "animation_event",
+				["Event"] = "fire_bullets",
 				["UniqueID"] = "1164525964",
-				["Arguments"] = "attack primary@@0.1",
+				["Arguments"] = "smg@@0.1",
 				["EditorExpand"] = true,
 			},
 		},
-		[5] = {
+		[3] = {
 			["children"] = {
 			},
 			["self"] = {
@@ -143,6 +111,40 @@
 				["Bone"] = "right hand",
 				["Model"] = "models/weapons/w_smg_mac10.mdl",
 				["ClassName"] = "model",
+			},
+		},
+		[4] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Walk"] = "walk_pistol",
+				["UniqueID"] = "2400762917",
+				["ReloadStand"] = "reload_pistol",
+				["Jump"] = "jump_pistol",
+				["AttackStandPrimaryfire"] = "aimlayer_pistol",
+				["SwimIdle"] = "swim_idle_pistol",
+				["Run"] = "run_pistol",
+				["ClassName"] = "holdtype",
+				["Swim"] = "swimming_pistol",
+				["CrouchWalk"] = "cwalk_pistol",
+				["CrouchIdle"] = "cidle_pistol",
+				["ReloadCrouch"] = "reload_pistol",
+				["StandIdle"] = "idle_pistol",
+				["AttackCrouchPrimaryfire"] = "aimlayer_pistol_crouch",
+			},
+		},
+		[5] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Alpha"] = 0,
+				["ClassName"] = "model",
+				["UniqueID"] = "2415180994",
+				["Model"] = "models/pac/default.mdl",
+				["EditorExpand"] = true,
+				["Bone"] = "hitpos",
+				["Name"] = "hitpos",
+				["Brightness"] = 0.9,
 			},
 		},
 		[6] = {
@@ -165,19 +167,155 @@
 				["ClassName"] = "event",
 				["UniqueID"] = "185265304",
 				["RootOwner"] = false,
-				["Event"] = "animation_event",
+				["Event"] = "fire_bullets",
 				["EditorExpand"] = true,
-				["Arguments"] = "attack primary@@0.1",
+				["Arguments"] = "smg@@0.1",
+			},
+		},
+	},
+	["self"] = {
+		["Name"] = "SMG",
+		["ClassName"] = "group",
+		["UniqueID"] = "3035408475",
+		["EditorExpand"] = true,
+	},
+},
+[2] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+								[1] = {
+									["children"] = {
+									},
+									["self"] = {
+										["UniqueID"] = "463513559",
+										["Name"] = "webcam image",
+										["Scale"] = Vector(0.69999998807907, 1.2999999523163, 0.76999998092651),
+										["ClassName"] = "model",
+										["Size"] = 0.208,
+										["Position"] = Vector(-0.020416259765625, -0.024200439453125, 5.2340927124023),
+										["Material"] = "http://wallpaper21.com/wp-content/uploads/2016/06/smiley-face-wallpaper1-1024x640.jpg",
+										["Fullbright"] = true,
+										["Model"] = "models/hunter/plates/plate1x1.mdl",
+										["Angles"] = Angle(89.833763122559, 179.97763061523, 179.97631835938),
+									},
+								},
+							},
+							["self"] = {
+								["ClassName"] = "model",
+								["Size"] = 0.25,
+								["EditorExpand"] = true,
+								["Model"] = "models/gmod_tower/suitetv.mdl",
+								["UniqueID"] = "846923788",
+							},
+						},
+					},
+					["self"] = {
+						["ClassName"] = "jiggle",
+						["UniqueID"] = "2245707605",
+						["EditorExpand"] = true,
+						["Bone"] = "invalidbone",
+						["Name"] = "Makes the head float behind.",
+						["Position"] = Vector(-0.001953125, -25.370361328125, 56.828125),
+					},
+				},
+			},
+			["self"] = {
+				["Name"] = "The Head",
+				["ClassName"] = "group",
+				["UniqueID"] = "2053457589",
+				["EditorExpand"] = true,
+			},
+		},
+	},
+	["self"] = {
+		["Name"] = "Second Head & Hitpos effects",
+		["ClassName"] = "group",
+		["UniqueID"] = "860513635",
+		["Description"] = "add parts to me!",
+	},
+},
+[3] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ClassName"] = "proxy",
+						["UniqueID"] = "1699907531",
+						["Expression"] = "nil,nil,abs(owner_velocity_right())*-0.25",
+						["EditorExpand"] = true,
+						["VariableName"] = "Position",
+					},
+				},
+				[2] = {
+					["children"] = {
+					},
+					["self"] = {
+						["VelocityRoughness"] = 20,
+						["UniqueID"] = "209517437",
+						["Expression"] = "nil, owner_velocity_right()*3, owner_velocity_forward()*-1",
+						["ClassName"] = "proxy",
+						["VariableName"] = "Angles",
+					},
+				},
+			},
+			["self"] = {
+				["Angles"] = Angle(0.65625, -1.4012984643248e-045, -2.8025969286496e-045),
+				["UniqueID"] = "3891402856",
+				["Bone"] = "pelvis",
+				["ClassName"] = "bone",
+				["EditorExpand"] = true,
 			},
 		},
 	},
 	["self"] = {
 		["ClassName"] = "group",
-		["UniqueID"] = "3035408475",
-		["Name"] = "SMG",
+		["UniqueID"] = "2288060575",
+		["Name"] = "run lean",
 	},
 },
-[2] = {
+[4] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ClassName"] = "event",
+				["UniqueID"] = "934085827",
+				["Event"] = "weapon_class",
+				["Arguments"] = "Crowbar@@1",
+				["Invert"] = true,
+			},
+		},
+		[2] = {
+			["children"] = {
+			},
+			["self"] = {
+				["UsePlayerColor"] = true,
+				["Angles"] = Angle(7.8331813812256, -100.91264343262, -155.86985778809),
+				["UniqueID"] = "3399603005",
+				["Position"] = Vector(2.1136474609375, -1.126708984375, 3.1097412109375),
+				["Size"] = 1.15,
+				["Bone"] = "right hand",
+				["Model"] = "models/weapons/w_knife_t.mdl",
+				["ClassName"] = "model",
+			},
+		},
+	},
+	["self"] = {
+		["ClassName"] = "group",
+		["UniqueID"] = "1207255157",
+		["Name"] = "Crowbar",
+	},
+},
+[5] = {
 	["children"] = {
 		[1] = {
 			["children"] = {
@@ -209,13 +347,12 @@
 		},
 	},
 	["self"] = {
-		["Name"] = "Toolgun",
 		["ClassName"] = "group",
 		["UniqueID"] = "2917629180",
-		["EditorExpand"] = true,
+		["Name"] = "Toolgun",
 	},
 },
-[3] = {
+[6] = {
 	["children"] = {
 		[1] = {
 			["children"] = {
@@ -307,11 +444,22 @@
 		["Name"] = "Phys",
 	},
 },
-[4] = {
+[7] = {
 	["children"] = {
 		[1] = {
 			["children"] = {
 				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["EditorExpand"] = true,
+						["Position"] = Vector(2.484375, -1.200927734375, 21.89999961853),
+						["Bone"] = "pelvis",
+						["UniqueID"] = "3119407898",
+						["ClassName"] = "bone",
+					},
+				},
+				[2] = {
 					["children"] = {
 					},
 					["self"] = {
@@ -323,24 +471,13 @@
 						["ClassName"] = "bone",
 					},
 				},
-				[2] = {
-					["children"] = {
-					},
-					["self"] = {
-						["Angles"] = Angle(33.552574157715, -7.5467348098755, 9.8278274536133),
-						["Bone"] = "left calf",
-						["UniqueID"] = "4014464156",
-						["ClassName"] = "bone",
-					},
-				},
 				[3] = {
 					["children"] = {
 					},
 					["self"] = {
-						["EditorExpand"] = true,
-						["Position"] = Vector(2.484375, -1.200927734375, 21.89999961853),
-						["Bone"] = "pelvis",
-						["UniqueID"] = "3119407898",
+						["Angles"] = Angle(-12.5, -0.20000000298023, -0.20000000298023),
+						["Bone"] = "right thigh",
+						["UniqueID"] = "1424301209",
 						["ClassName"] = "bone",
 					},
 				},
@@ -348,9 +485,9 @@
 					["children"] = {
 					},
 					["self"] = {
-						["Angles"] = Angle(-12.5, -0.20000000298023, -0.20000000298023),
-						["Bone"] = "right thigh",
-						["UniqueID"] = "1424301209",
+						["Angles"] = Angle(33.552574157715, -7.5467348098755, 9.8278274536133),
+						["Bone"] = "left calf",
+						["UniqueID"] = "4014464156",
 						["ClassName"] = "bone",
 					},
 				},
@@ -399,15 +536,6 @@
 			["children"] = {
 			},
 			["self"] = {
-				["ClassName"] = "animation",
-				["UniqueID"] = "646548146",
-				["SequenceName"] = "sit",
-			},
-		},
-		[4] = {
-			["children"] = {
-			},
-			["self"] = {
 				["ClassName"] = "webaudio",
 				["UniqueID"] = "1084387190",
 				["PositionOffset"] = Vector(-0.30000001192093, 0, 0),
@@ -417,7 +545,7 @@
 				["OuterVolume"] = -0.4,
 			},
 		},
-		[5] = {
+		[4] = {
 			["children"] = {
 				[1] = {
 					["children"] = {
@@ -442,6 +570,15 @@
 				["Invert"] = true,
 			},
 		},
+		[5] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ClassName"] = "animation",
+				["UniqueID"] = "646548146",
+				["SequenceName"] = "sit",
+			},
+		},
 	},
 	["self"] = {
 		["Name"] = "SmokeWEVRYDAY",
@@ -450,66 +587,7 @@
 		["Description"] = "add parts to me!",
 	},
 },
-[5] = {
-	["children"] = {
-		[1] = {
-			["children"] = {
-				[1] = {
-					["children"] = {
-						[1] = {
-							["children"] = {
-								[1] = {
-									["children"] = {
-									},
-									["self"] = {
-										["UniqueID"] = "463513559",
-										["Name"] = "webcam image",
-										["Scale"] = Vector(0.69999998807907, 1.2999999523163, 0.76999998092651),
-										["ClassName"] = "model",
-										["Size"] = 0.208,
-										["Position"] = Vector(-0.020416259765625, -0.024200439453125, 5.2340927124023),
-										["Material"] = "http://wallpaper21.com/wp-content/uploads/2016/06/smiley-face-wallpaper1-1024x640.jpg",
-										["Fullbright"] = true,
-										["Model"] = "models/hunter/plates/plate1x1.mdl",
-										["Angles"] = Angle(89.833763122559, 179.97763061523, 179.97631835938),
-									},
-								},
-							},
-							["self"] = {
-								["ClassName"] = "model",
-								["Size"] = 0.25,
-								["EditorExpand"] = true,
-								["Model"] = "models/gmod_tower/suitetv.mdl",
-								["UniqueID"] = "846923788",
-							},
-						},
-					},
-					["self"] = {
-						["ClassName"] = "jiggle",
-						["UniqueID"] = "2245707605",
-						["EditorExpand"] = true,
-						["Bone"] = "invalidbone",
-						["Name"] = "Makes the head float behind.",
-						["Position"] = Vector(-0.001953125, -25.370361328125, 56.828125),
-					},
-				},
-			},
-			["self"] = {
-				["Name"] = "The Head",
-				["ClassName"] = "group",
-				["UniqueID"] = "2053457589",
-				["EditorExpand"] = true,
-			},
-		},
-	},
-	["self"] = {
-		["Name"] = "Second Head & Hitpos effects",
-		["ClassName"] = "group",
-		["UniqueID"] = "860513635",
-		["Description"] = "add parts to me!",
-	},
-},
-[6] = {
+[8] = {
 	["children"] = {
 		[1] = {
 			["children"] = {
@@ -542,29 +620,9 @@
 		["Name"] = "Crossbow",
 	},
 },
-[7] = {
+[9] = {
 	["children"] = {
 		[1] = {
-			["children"] = {
-			},
-			["self"] = {
-				["Angles"] = Angle(-61, 0, 0),
-				["Bone"] = "left upperarm",
-				["UniqueID"] = "3068352848",
-				["ClassName"] = "bone",
-			},
-		},
-		[2] = {
-			["children"] = {
-			},
-			["self"] = {
-				["EditorExpand"] = true,
-				["ClassName"] = "animation",
-				["UniqueID"] = "2492476836",
-				["SequenceName"] = "ragdoll",
-			},
-		},
-		[3] = {
 			["children"] = {
 			},
 			["self"] = {
@@ -575,7 +633,7 @@
 				["ClassName"] = "bone",
 			},
 		},
-		[4] = {
+		[2] = {
 			["children"] = {
 			},
 			["self"] = {
@@ -587,7 +645,7 @@
 				["ClassName"] = "event",
 			},
 		},
-		[5] = {
+		[3] = {
 			["children"] = {
 			},
 			["self"] = {
@@ -596,6 +654,26 @@
 				["UniqueID"] = "2833560827",
 				["ClassName"] = "bone",
 				["EditorExpand"] = true,
+			},
+		},
+		[4] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Angles"] = Angle(-61, 0, 0),
+				["Bone"] = "left upperarm",
+				["UniqueID"] = "3068352848",
+				["ClassName"] = "bone",
+			},
+		},
+		[5] = {
+			["children"] = {
+			},
+			["self"] = {
+				["EditorExpand"] = true,
+				["ClassName"] = "animation",
+				["UniqueID"] = "2492476836",
+				["SequenceName"] = "ragdoll",
 			},
 		},
 		[6] = {
@@ -615,17 +693,14 @@
 		["Name"] = "Dab",
 	},
 },
-[8] = {
+[10] = {
 	["children"] = {
 		[1] = {
 			["children"] = {
 			},
 			["self"] = {
-				["ClassName"] = "event",
-				["UniqueID"] = "1151528982",
-				["Event"] = "button",
-				["Arguments"] = "i",
-				["Invert"] = true,
+				["UniqueID"] = "3448433031",
+				["ClassName"] = "entity",
 			},
 		},
 		[2] = {
@@ -634,122 +709,40 @@
 					["children"] = {
 					},
 					["self"] = {
-						["Arguments"] = "0.25",
-						["UniqueID"] = "1120605322",
-						["Event"] = "timer",
-						["ClassName"] = "event",
-						["EditorExpand"] = true,
+						["ClassName"] = "animation",
+						["UniqueID"] = "67181479",
+						["SequenceName"] = "swimming_all",
 					},
 				},
 			},
 			["self"] = {
-				["UniqueID"] = "3476049658",
-				["ClassName"] = "shake",
-				["Amplitude"] = 10,
+				["AffectChildrenOnly"] = true,
+				["ClassName"] = "event",
+				["Invert"] = true,
+				["RootOwner"] = false,
+				["Event"] = "is_in_noclip",
+				["UniqueID"] = "886486516",
 				["EditorExpand"] = true,
 			},
 		},
 		[3] = {
 			["children"] = {
-				[1] = {
-					["children"] = {
-					},
-					["self"] = {
-						["SequenceName"] = "taunt_dance_base",
-						["ClassName"] = "animation",
-						["UniqueID"] = "3100878805",
-						["Rate"] = 0.025,
-					},
-				},
 			},
 			["self"] = {
-				["ClassName"] = "model",
-				["Position"] = Vector(-24.90478515625, 40.275390625, 0),
-				["EditorExpand"] = true,
-				["Bone"] = "none",
-				["Model"] = "models/player/zombie_classic.mdl",
-				["UniqueID"] = "1658800486",
+				["Outline"] = 26.6,
+				["UniqueID"] = "1608540574",
+				["Position"] = Vector(-0.21839904785156, -4.3779997825623, 0),
+				["Alpha"] = 0.1,
+				["Angles"] = Angle(90, 0, 90),
+				["Size"] = 0.075,
+				["OutlineAlpha"] = 0.15,
+				["ClassName"] = "text",
+				["OutlineColor"] = Vector(0, 0, 0),
+				["Bone"] = "spine 2",
+				["Text"] = "MRePotatoes",
 			},
 		},
 		[4] = {
-			["children"] = {
-			},
-			["self"] = {
-				["URL"] = "https://github.com/MRePotatoes/PAC3-outfits-With-download-/blob/master/Idontknow1.1/Sounds/Dance%20till%20Youre%20Dead%20(FULL%20REMIX).mp3?raw=true",
-				["ClassName"] = "webaudio",
-				["UniqueID"] = "985965722",
-				["Volume"] = 2,
-			},
-		},
-		[5] = {
-			["children"] = {
-				[1] = {
-					["children"] = {
-					},
-					["self"] = {
-						["SequenceName"] = "taunt_dance_base",
-						["ClassName"] = "animation",
-						["UniqueID"] = "4051304151",
-						["Rate"] = 0.025,
-					},
-				},
-			},
-			["self"] = {
-				["ClassName"] = "model",
-				["Position"] = Vector(4.12060546875, -60.02099609375, 0),
-				["EditorExpand"] = true,
-				["Bone"] = "none",
-				["Model"] = "models/player/zombie_classic.mdl",
-				["UniqueID"] = "558054967",
-			},
-		},
-		[6] = {
-			["children"] = {
-			},
-			["self"] = {
-				["ClassName"] = "animation",
-				["UniqueID"] = "3040250421",
-				["Rate"] = 0.025,
-				["Loop"] = false,
-				["SequenceName"] = "taunt_dance_base",
-				["EditorExpand"] = true,
-			},
-		},
-		[7] = {
-			["children"] = {
-				[1] = {
-					["children"] = {
-					},
-					["self"] = {
-						["SequenceName"] = "excitedup",
-						["ClassName"] = "animation",
-						["UniqueID"] = "650580358",
-						["Rate"] = 0.95,
-					},
-				},
-			},
-			["self"] = {
-				["Angles"] = Angle(-0, -2.3037960529327, 0),
-				["UniqueID"] = "3455393012",
-				["Position"] = Vector(-90.22705078125, -11.01513671875, 0),
-				["EditorExpand"] = true,
-				["Bone"] = "none",
-				["Model"] = "models/dog.mdl",
-				["ClassName"] = "model",
-			},
-		},
-	},
-	["self"] = {
-		["EditorExpand"] = true,
-		["UniqueID"] = "1505374694",
-		["ClassName"] = "group",
-		["Name"] = "dance ( i )",
-		["Description"] = "add parts to me!",
-	},
-},
-[9] = {
-	["children"] = {
-		[1] = {
 			["children"] = {
 				[1] = {
 					["children"] = {
@@ -799,7 +792,7 @@
 						["ClassName"] = "model",
 						["UniqueID"] = "3027178454",
 						["Position"] = Vector(0.000274658203125, 0.328125, -0.03668212890625),
-						["Color"] = Vector(151.36106872559, 26.459587097168, 0.0019382572500035),
+						["Color"] = Vector(35.337341308594, 167.220703125, 254.96774291992),
 						["EditorExpand"] = true,
 						["Model"] = "models/player/items/humans/top_hat.mdl",
 						["Angles"] = Angle(84.096473693848, -90.000068664551, 179.99980163574),
@@ -819,7 +812,7 @@
 				["EditorExpand"] = true,
 			},
 		},
-		[2] = {
+		[5] = {
 			["children"] = {
 			},
 			["self"] = {
@@ -837,53 +830,6 @@
 				["Text"] = "by",
 			},
 		},
-		[3] = {
-			["children"] = {
-			},
-			["self"] = {
-				["UniqueID"] = "3448433031",
-				["ClassName"] = "entity",
-			},
-		},
-		[4] = {
-			["children"] = {
-				[1] = {
-					["children"] = {
-					},
-					["self"] = {
-						["ClassName"] = "animation",
-						["UniqueID"] = "67181479",
-						["SequenceName"] = "swimming_all",
-					},
-				},
-			},
-			["self"] = {
-				["AffectChildrenOnly"] = true,
-				["ClassName"] = "event",
-				["Invert"] = true,
-				["RootOwner"] = false,
-				["Event"] = "is_in_noclip",
-				["UniqueID"] = "886486516",
-				["EditorExpand"] = true,
-			},
-		},
-		[5] = {
-			["children"] = {
-			},
-			["self"] = {
-				["Outline"] = 26.6,
-				["UniqueID"] = "1608540574",
-				["Position"] = Vector(-0.21839904785156, -4.3779997825623, 0),
-				["Alpha"] = 0.1,
-				["Angles"] = Angle(90, 0, 90),
-				["Size"] = 0.075,
-				["OutlineAlpha"] = 0.15,
-				["ClassName"] = "text",
-				["OutlineColor"] = Vector(0, 0, 0),
-				["Bone"] = "spine 2",
-				["Text"] = "MRePotatoes",
-			},
-		},
 		[6] = {
 			["children"] = {
 			},
@@ -895,13 +841,14 @@
 		},
 	},
 	["self"] = {
-		["Name"] = "my outfit",
-		["ClassName"] = "group",
+		["EditorExpand"] = true,
 		["UniqueID"] = "2686881008",
+		["ClassName"] = "group",
+		["Name"] = "my outfit",
 		["Description"] = "add parts to me!",
 	},
 },
-[10] = {
+[11] = {
 	["children"] = {
 		[1] = {
 			["children"] = {
@@ -909,71 +856,126 @@
 					["children"] = {
 					},
 					["self"] = {
-						["ClassName"] = "proxy",
-						["UniqueID"] = "1699907531",
-						["Expression"] = "nil,nil,abs(owner_velocity_right())*-0.25",
-						["EditorExpand"] = true,
-						["VariableName"] = "Position",
-					},
-				},
-				[2] = {
-					["children"] = {
-					},
-					["self"] = {
-						["VelocityRoughness"] = 20,
-						["UniqueID"] = "209517437",
-						["Expression"] = "nil, owner_velocity_right()*3, owner_velocity_forward()*-1",
-						["ClassName"] = "proxy",
-						["VariableName"] = "Angles",
+						["SequenceName"] = "excitedup",
+						["ClassName"] = "animation",
+						["UniqueID"] = "650580358",
+						["Rate"] = 0.95,
 					},
 				},
 			},
 			["self"] = {
-				["Angles"] = Angle(0.65625, -8.4077907859489e-045, -1.4012984643248e-045),
-				["UniqueID"] = "3891402856",
-				["Bone"] = "pelvis",
-				["ClassName"] = "bone",
+				["Angles"] = Angle(-0, -2.3037960529327, 0),
+				["UniqueID"] = "3455393012",
+				["Position"] = Vector(-90.22705078125, -11.01513671875, 0),
 				["EditorExpand"] = true,
-			},
-		},
-	},
-	["self"] = {
-		["ClassName"] = "group",
-		["UniqueID"] = "2288060575",
-		["Name"] = "run lean",
-	},
-},
-[11] = {
-	["children"] = {
-		[1] = {
-			["children"] = {
-			},
-			["self"] = {
-				["ClassName"] = "event",
-				["UniqueID"] = "934085827",
-				["Event"] = "weapon_class",
-				["Arguments"] = "Crowbar@@1",
-				["Invert"] = true,
+				["Bone"] = "none",
+				["Model"] = "models/dog.mdl",
+				["ClassName"] = "model",
 			},
 		},
 		[2] = {
 			["children"] = {
 			},
 			["self"] = {
-				["UsePlayerColor"] = true,
-				["Angles"] = Angle(7.8331813812256, -100.91264343262, -155.86985778809),
-				["UniqueID"] = "3399603005",
-				["Position"] = Vector(2.1136474609375, -1.126708984375, 3.1097412109375),
-				["Size"] = 1.15,
-				["Bone"] = "right hand",
-				["Model"] = "models/weapons/w_knife_t.mdl",
+				["ClassName"] = "animation",
+				["UniqueID"] = "3040250421",
+				["Rate"] = 0.025,
+				["Loop"] = false,
+				["SequenceName"] = "taunt_dance_base",
+				["EditorExpand"] = true,
+			},
+		},
+		[3] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["SequenceName"] = "taunt_dance_base",
+						["ClassName"] = "animation",
+						["UniqueID"] = "4051304151",
+						["Rate"] = 0.025,
+					},
+				},
+			},
+			["self"] = {
 				["ClassName"] = "model",
+				["Position"] = Vector(4.12060546875, -60.02099609375, 0),
+				["EditorExpand"] = true,
+				["Bone"] = "none",
+				["Model"] = "models/player/zombie_classic.mdl",
+				["UniqueID"] = "558054967",
+			},
+		},
+		[4] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["SequenceName"] = "taunt_dance_base",
+						["ClassName"] = "animation",
+						["UniqueID"] = "3100878805",
+						["Rate"] = 0.025,
+					},
+				},
+			},
+			["self"] = {
+				["ClassName"] = "model",
+				["Position"] = Vector(-24.90478515625, 40.275390625, 0),
+				["EditorExpand"] = true,
+				["Bone"] = "none",
+				["Model"] = "models/player/zombie_classic.mdl",
+				["UniqueID"] = "1658800486",
+			},
+		},
+		[5] = {
+			["children"] = {
+			},
+			["self"] = {
+				["URL"] = "https://github.com/MRePotatoes/PAC3-outfits-With-download-/blob/master/Idontknow1.1/Sounds/Dance%20till%20Youre%20Dead%20(FULL%20REMIX).mp3?raw=true",
+				["ClassName"] = "webaudio",
+				["UniqueID"] = "985965722",
+				["Volume"] = 2,
+			},
+		},
+		[6] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["Arguments"] = "0.25",
+						["UniqueID"] = "1120605322",
+						["Event"] = "timer",
+						["ClassName"] = "event",
+						["EditorExpand"] = true,
+					},
+				},
+			},
+			["self"] = {
+				["UniqueID"] = "3476049658",
+				["ClassName"] = "shake",
+				["Amplitude"] = 10,
+				["EditorExpand"] = true,
+			},
+		},
+		[7] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ClassName"] = "event",
+				["UniqueID"] = "1151528982",
+				["Event"] = "button",
+				["Arguments"] = "i",
+				["Invert"] = true,
 			},
 		},
 	},
 	["self"] = {
+		["Name"] = "dance ( i )",
 		["ClassName"] = "group",
-		["UniqueID"] = "1207255157",
-		["Name"] = "Crowbar",
+		["UniqueID"] = "1505374694",
+		["Description"] = "add parts to me!",
 	},
 },
